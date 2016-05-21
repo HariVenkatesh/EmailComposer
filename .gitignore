@@ -1,0 +1,9 @@
+window.plugin.email.isServiceAvailable(
+    function (isAvailable) {
+    if(isAvailable){
+       window.plugin.email.open({
+    
+});
+}
+    }
+);
