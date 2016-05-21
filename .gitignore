@@ -2,8 +2,15 @@ window.plugin.email.isServiceAvailable(
     function (isAvailable) {
     if(isAvailable){
        window.plugin.email.open({
+                                          to:[$("#addCompanyEmail").val()],
+                                          cc:[],
+                                          bcc:[],
+                                          subject: '',
+                                          body:''
     
 });
-}
+}else{
+console.log("No Email Option Available");
+    }
     }
 );
