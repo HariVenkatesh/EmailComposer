@@ -2,11 +2,11 @@ window.plugin.email.isServiceAvailable(
     function (isAvailable) {
     if(isAvailable){
        window.plugin.email.open({
-                                          to:[$("#addCompanyEmail").val()],
-                                          cc:[],
-                                          bcc:[],
-                                          subject: '',
-                                          body:''
+                                          to:[sample@gmail.com,eg@gmail.com],
+                                          cc:[test@gmail.com],
+                                          bcc:[testing@gmail.com],
+                                          subject: 'Testing Email Composer',
+                                          body:'Email Composer Message In Body'
     
 });
 }else{
