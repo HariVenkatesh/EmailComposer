@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   
+<title>SMS &amp; Mail Composer</title>
+<!--Calling all css and javascript files locally -->
+<link rel="stylesheet" href="css/one.css"/>
+<script src="js/one.js"></script>
+<script src="js/two.js"></script>
+<script src="js/three.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+</head>
+
+<body>
+<!-- index page -->
+
+    <div data-role = "page" id = "index" data-theme="b" data-rel="back">
+    <!--header part of the page-->
+    <div data-role="header">
+    
+        <h1>SMS &amp; Mail </h1>
+    </div> 
+
+<!-- content part of the page-->
+         <div data-role="content"> 
+         <a href="#" data-role="button" onclick="openemail();">Compose Email</a>
+         <a href="#sms" data-role="button">Compose SMS</a>  
+         </div>
+<!-- footer section of the page-->
+         <div data-role="footer" data-position="fixed">
+             <h1>Copyrights &copy; CG-VAK</h1>
+         </div>
+
+     </div> 
+
+     <!-- Email composer page -->
+
+     <div data-role = "page" id = "email" data-theme="b" data-rel="back">
+
+     <div data-role="header">
+     <a href="#" data-rel="back" class="ui-btn ui-icon ui-icon-back ui-corner-all ui-btn-icon-left">Back</a>
+         <h1>SMS &amp; Mail</h1>
+     </div>
+
+        <div data-role="content" >
+            
+        </div>
+
+       
+
+<div data-role="footer" data-position="fixed">
+<h1>Copyrights &copy; CG-VAK</h1>
+</div>
+         
+    </div>
+
+    <!-- Message composer -->
+         <div data-role = "page" id = "sms" data-theme="b" data-rel="back">
+
+     <div data-role="header">
+     <a href="#" data-rel="back" class="ui-btn ui-icon ui-icon-back ui-corner-all ui-btn-icon-left">Back</a>
+         <h1>SMS &amp; Mail</h1>
+     </div>
+
+        <div data-role="content" >
+        <input name="" id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
+<br/>
+<textarea name="" id="messageTxt" placeholder="Enter message"></textarea>
+<br/>
+<input id="btnDefaultSMS" type="button" value="Send SMS" />
+            
+        </div>
+
+       
+
+<div data-role="footer" data-position="fixed">
+<h1>Copyrights &copy; CG-VAK</h1>
+</div>
+         
+    </div>
+
+</body>
+
+</html>
