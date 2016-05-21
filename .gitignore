@@ -12,5 +12,4 @@ window.plugin.email.isServiceAvailable(
 }else{
 console.log("No Email Option Available");
     }
-    }
-);
+    });
